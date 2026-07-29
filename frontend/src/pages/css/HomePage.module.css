@@ -1,0 +1,123 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 0.667px solid rgba(44, 26, 14, 0.12);
+  background: rgba(253, 250, 245, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.picBG {
+  background-image: url("@/assets/pics/homePageBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100svh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.mainTitleContainer {
+  display: flex;
+  width: 90%;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 100;
+  margin-left: 10rem;
+  gap: 1em;
+}
+
+.titleLine1 {
+  color: #f7f2eb;
+  font-family: "Playfair Display";
+  font-size: 3.5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+.titleLine2 {
+  color: #f7f2eb;
+  font-family: "Playfair Display";
+  font-size: 3.5vw;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 75px;
+}
+
+.underTitle {
+  width: 60%;
+}
+
+.underTitle span {
+  color: rgba(247, 242, 235, 0.7);
+  font-family: "DM Sans";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btnShop,
+.btnSets {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #5c7a5f;
+  color: #2c1a0e;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+
+.btnShop:hover {
+  background: #4a6350; /* ciemniejszy zielony */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(92, 122, 95, 0.35);
+}
+
+.btnShop:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(92, 122, 95, 0.3);
+}
+
+.btnSets {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #5c7a5f;
+}
+
+.btnSets:hover {
+  background-color: rgba(92, 122, 95, 0.15);
+  border-color: #f7f2eb;
+  color: #f7f2eb;
+  transform: translateY(-2px);
+}
+
+.btnSets:active {
+  transform: translateY(0);
+  background-color: rgba(92, 122, 95, 0.25);
+}

@@ -1,0 +1,125 @@
+.navBar {
+  display: flex;
+  padding: 10px;
+  background-color: #fdfaf4;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.sites {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 20px 10px;
+  margin: 0;
+  align-items: center;
+}
+
+.navLinks a {
+  color: #2c1a0e;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-size: 15px;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  line-height: 0;
+}
+
+.navLinks a:hover {
+  color: #5c7a5f;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 20px 10px;
+  margin: 0;
+  align-items: center;
+}
+
+.icons a {
+  width: fit-content;
+  height: fit-content;
+  line-height: 0;
+}
+
+.icons svg:hover {
+  color: #5c7a5f;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.searchInput {
+  width: 0;
+  max-width: 0;
+  opacity: 0;
+  padding: 8px 0;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  color: #2c1a0e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  outline: none;
+  pointer-events: none;
+  transform: translateX(12px);
+  transition:
+    width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    max-width 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.28s ease,
+    padding 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.searchInput::placeholder {
+  color: #2c1a0e88;
+}
+
+.searchOpen .searchInput {
+  width: 180px;
+  max-width: 180px;
+  opacity: 1;
+  padding: 8px 8px 8px 0;
+  margin-right: 10px;
+  border-bottom-color: #2c1a0e55;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.searchToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.searchToggle:hover {
+  opacity: 0.7;
+}
