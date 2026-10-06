@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./css/HomePage.module.css";
 import { CategoryTilesSection } from "@/components/homePage/CategoryTilesSection";
 import { NewsletterSection } from "@/components/homePage/NewsletterSection";
@@ -7,6 +8,8 @@ import { smoothScrollToElement } from "@/utils/smoothScroll";
 interface Props {}
 
 export const HomePage: React.FC<Props> = ({}: Props) => {
+  const navigate = useNavigate();
+
   const scrollToShop = () => {
     const shopSection = document.getElementById("shop");
     if (shopSection) {
@@ -34,7 +37,13 @@ export const HomePage: React.FC<Props> = ({}: Props) => {
             <button type="button" className={styles.btnShop} onClick={scrollToShop}>
               Do Sklepu
             </button>
-            <button className={styles.btnSets}>Zobacz Zestawy</button>
+            <button
+              type="button"
+              className={styles.btnSets}
+              onClick={() => navigate("/gift-sets")}
+            >
+              Zobacz Zestawy
+            </button>
           </div>
         </div>
       </div>

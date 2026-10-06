@@ -1,7 +1,6 @@
 import React from "react";
+import { CatalogLayout } from "@/components/catalog/CatalogLayout";
 
-interface Props {}
-
-export const PorcelainPage: React.FC<Props> = ({}: Props) => {
-  return <div></div>;
+export const PorcelainPage: React.FC = () => {
+  return <CatalogLayout slug="porcelana" />;
 };

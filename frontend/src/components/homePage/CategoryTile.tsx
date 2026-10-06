@@ -7,7 +7,9 @@ export type CategoryVariant =
   | "coffee"
   | "porcelain"
   | "accessories"
-  | "giftSets";
+  | "giftSets"
+  | "extras"
+  | "herbs";
 
 export interface CategoryTileProps {
   title: string;

@@ -5,6 +5,8 @@ import {
   type CategoryVariant,
 } from "@/components/homePage/CategoryTile";
 import teaImage from "@/assets/pics/teaBG.jpg";
+import herbsImage from "@/assets/pics/herbsBG.jpg";
+import additivesImage from "@/assets/pics/additivesBG.jpg";
 import coffeeImage from "@/assets/pics/coffeeBG.jpg";
 import porcelainImage from "@/assets/pics/porcelainBG.jpg";
 import accessoriesImage from "@/assets/pics/accessoriesBG.jpg";
@@ -15,7 +17,7 @@ const categories: {
   subtitle: string;
   to: string;
   variant: CategoryVariant;
-  image: string;
+  image?: string;
 }[] = [
   {
     title: "Herbata",
@@ -25,11 +27,25 @@ const categories: {
     image: teaImage,
   },
   {
+    title: "Zioła",
+    subtitle: "Zioła, zioła korzenne i yerba",
+    to: "/herbs",
+    variant: "herbs",
+    image: herbsImage,
+  },
+  {
     title: "Kawa",
     subtitle: "Kawa speciality z jednego źródła",
     to: "/coffee",
     variant: "coffee",
     image: coffeeImage,
+  },
+  {
+    title: "Dodatki",
+    subtitle: "Syropy, miody, czekolady i słodycze",
+    to: "/additives",
+    variant: "extras",
+    image: additivesImage,
   },
   {
     title: "Porcelana",

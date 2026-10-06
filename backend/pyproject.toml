@@ -1,0 +1,2 @@
+[tool.tortoise]
+tortoise_orm = "db.config.TORTOISE_ORM"

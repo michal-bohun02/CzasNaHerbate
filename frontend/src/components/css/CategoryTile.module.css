@@ -31,6 +31,14 @@
   background: #000;
 }
 
+.extras {
+  background: linear-gradient(160deg, #c4a574 0%, #6b3e2e 100%);
+}
+
+.herbs {
+  background: linear-gradient(160deg, #7d9a55 0%, #2f4a28 100%);
+}
+
 .tile:hover {
   transform: translateY(-4px);
 }

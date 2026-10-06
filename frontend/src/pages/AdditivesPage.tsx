@@ -1,6 +1,6 @@
 import React from "react";
 import { CatalogLayout } from "@/components/catalog/CatalogLayout";
 
-export const CoffeePage: React.FC = () => {
-  return <CatalogLayout slug="kawa" />;
+export const AdditivesPage: React.FC = () => {
+  return <CatalogLayout slug="dodatki" />;
 };

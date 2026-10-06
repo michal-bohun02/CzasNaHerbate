@@ -5,7 +5,9 @@ import logo from "@/assets/icons/logo.svg";
 
 const shopLinks = [
   { label: "Herbata", to: "/tea" },
+  { label: "Zioła", to: "/herbs" },
   { label: "Kawa", to: "/coffee" },
+  { label: "Dodatki", to: "/additives" },
   { label: "Porcelana", to: "/porcelain" },
   { label: "Akcesoria", to: "/accessories" },
   { label: "Zestawy Prezentowe", to: "/gift-sets" },

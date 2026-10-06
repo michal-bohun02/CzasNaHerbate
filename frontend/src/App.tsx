@@ -7,6 +7,8 @@ import { CoffeePage } from "./pages/CoffeePage";
 import { PorcelainPage } from "./pages/PorcelainPage";
 import { AccessoriesPage } from "./pages/AccessoriesPage";
 import { GiftSetsPage } from "./pages/GiftSetsPage";
+import { AdditivesPage } from "./pages/AdditivesPage";
+import { HerbsPage } from "./pages/HerbsPage";
 import { NavBar } from "@/components/homePage/NavBar.tsx";
 import { Footer } from "@/components/homePage/Footer";
 import styles from "./App.module.css";
@@ -22,6 +24,8 @@ function App() {
             <Route path="/items" element={<ItemsPage />} />
             <Route path="/tea" element={<TeaPage />} />
             <Route path="/coffee" element={<CoffeePage />} />
+            <Route path="/additives" element={<AdditivesPage />} />
+            <Route path="/herbs" element={<HerbsPage />} />
             <Route path="/porcelain" element={<PorcelainPage />} />
             <Route path="/accessories" element={<AccessoriesPage />} />
             <Route path="/gift-sets" element={<GiftSetsPage />} />

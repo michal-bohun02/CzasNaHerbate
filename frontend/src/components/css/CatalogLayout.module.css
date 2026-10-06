@@ -1,0 +1,161 @@
+.page {
+  min-height: 70vh;
+  padding: 28px 8% 72px;
+  background: #fdfaf4;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: rgba(44, 26, 14, 0.5);
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+}
+
+.breadcrumb a:hover {
+  color: #5c7a5f;
+}
+
+.heading {
+  min-height: 1.1em;
+  margin: 0 0 28px;
+  color: #2c1a0e;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.products {
+  flex: 1;
+  min-width: 0;
+}
+
+.searchNote {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  color: rgba(44, 26, 14, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+.searchNote button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #5c7a5f;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.sortLabel {
+  color: rgba(44, 26, 14, 0.62);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+.sort {
+  min-width: 190px;
+  height: 40px;
+  padding: 0 34px 0 12px;
+  border: 1px solid rgba(44, 26, 14, 0.12);
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6.2 8 10l4-3.8' fill='none' stroke='%232c1a0e' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  color: #2c1a0e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sort:focus-visible {
+  outline: 2px solid #5c7a5f;
+  outline-offset: 2px;
+}
+
+.views {
+  display: flex;
+  gap: 6px;
+}
+
+.viewButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(44, 26, 14, 0.12);
+  border-radius: 10px;
+  background: #fff;
+  color: rgba(44, 26, 14, 0.55);
+  cursor: pointer;
+}
+
+.viewButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+.viewButtonActive {
+  background: #efe8dc;
+  border-color: rgba(44, 26, 14, 0.2);
+  color: #2c1a0e;
+}
+
+.viewButton:focus-visible {
+  outline: 2px solid #5c7a5f;
+  outline-offset: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 28px 18px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.status {
+  margin: 8px 0 0;
+  color: rgba(44, 26, 14, 0.55);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 860px) {
+  .page {
+    padding: 24px 20px 56px;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+}
